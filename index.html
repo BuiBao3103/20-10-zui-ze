@@ -777,7 +777,9 @@
                 document.querySelector("#rose-t").style.display = "none";
                 document.querySelector("#castle").style.display = "inherit";
                 document.querySelector("#theSvg").style.display = "inherit"
-
+                // Phát nhạc
+                var audio = document.getElementById("backgroundMusic");
+                audio.play();
                 rid = window.requestAnimationFrame(Typing);
                 function Typing() {
                     rid = window.requestAnimationFrame(Typing);
@@ -944,6 +946,9 @@
 
 
     </script>
+    <audio id="backgroundMusic">
+        <source src="./song.mp3" type="audio/mpeg">
+      </audio>
 </body>
 
 </html>
